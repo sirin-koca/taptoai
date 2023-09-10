@@ -15,7 +15,7 @@ body {
 
 header {
     margin: 0 0 0 0;
-    padding: 30px 10px 10px 10px;
+    padding: 40px 10px 10px 10px;
     color: #fff;
     text-align: right;
     background: linear-gradient(to right, #55f, darksalmon, #55f);
@@ -29,7 +29,7 @@ a {
 
 .info {
     margin: 0 0 0 0;
-    padding: 30px 30px 0 50px;
+    padding: 50px 30px 0 50px;
     max-width: auto;
     height: 100%;
     background: #dfe0df;  /* mint green */
@@ -67,12 +67,12 @@ img {
 }
 
 footer {
-    margin: 0 0 0 0;
+    margin: 30px 0 0 0;
     padding: 0 0 0 0;
     text-align: center;
-    position: sticky;
+    position: absolute;
     width: 100vw;
-    color: #55f;
+    color: #333;
 }
 
 /* Default styles for desktop and larger screens */
@@ -92,5 +92,4 @@ footer {
     .column {
         min-width: 100%; /* On smaller screens, columns take full width and stack */
     }
-
-
+}
