@@ -10,6 +10,7 @@ body {
     background-color: #ece9f1;  /* light purple */
     color: #333;
     line-height: 1.6;
+
 }
 
 header {
@@ -17,6 +18,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 30px 0;
+    background: linear-gradient(to bottom right, #4b0082, #00b894);
+    color: white;
 }
 
 a{
