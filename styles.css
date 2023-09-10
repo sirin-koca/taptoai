@@ -4,13 +4,11 @@
     padding: 0 0 0 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif;  
-    background-image: url('images\ai-human-dots.jpg') no-repeat;
-    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif; /* Google font */
 }
 
 body {
-    background-color: #ece9f1;  /* light purple */
+    background-color: #55f;  /* light purple */
     color: #333;
     line-height: 1.6;
 }
@@ -18,10 +16,9 @@ body {
 header {
     margin: 0 0 0 0;
     padding: 30px 10px 10px 10px;
-    background-color: #6b3d87;  /* dark purple */
     color: #fff;
     text-align: right;
-    background: linear-gradient(to bottom right, #55f, #00b894);
+    background: linear-gradient(to top right, #55f, darksalmon, #55f);
     color: white;
 }
 
@@ -34,6 +31,7 @@ a {
     margin: 0 0 0 0;
     padding: 30px 30px 0 50px;
     max-width: auto;
+    height: 100%;
     background: #dfe0df;  /* mint green */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -70,9 +68,9 @@ img {
 
 footer {
     margin: 0 0 0 0;
-    padding: 30px 10px 0px 10px;
+    padding: 0 0 0 0;
     text-align: center;
-    position: fixed;
+    position: sticky;
     width: 100vw;
     color: #55f;
 }
