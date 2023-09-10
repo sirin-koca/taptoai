@@ -19,7 +19,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 50px 0;
-    background: linear-gradient(to bottom right, #4b0082, #00b894);
+    background: linear-gradient(to bottom right, #55f, #00b894);
     color: white;
 }
 
@@ -30,7 +30,7 @@ a {
 .info {
     background: #dfe0df;  /* mint green */
     margin: 0 0 0 0;
-    padding: 50px 30px 20px 50px;
+    padding: 50px 30px 10px 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -59,5 +59,6 @@ footer {
     text-align: center;
     width: 100vw;
     margin: 0 0 0 0;
+    color: #55f;
 }
 
