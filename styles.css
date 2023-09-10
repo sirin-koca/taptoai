@@ -2,62 +2,67 @@
 body, h1, h2, p, form {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ece9f1;  /* light purple */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #50b3a2;
+    background-color: #6b3d87;  /* dark purple */
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 .info, .contact {
-    background: #fff;
+    background: #b2f0ca;  /* mint green */
     margin: 20px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #50b3a2;
+    border-bottom: 3px solid #6b3d87;  /* dark purple */
     padding-bottom: 10px;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 p {
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #a8a3b9;  /* grayish-purple */
     border-radius: 4px;
+    font-weight: 300;
 }
 
 button {
     display: inline-block;
-    background-color: #50b3a2;
+    background-color: #6b3d87;  /* dark purple */
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 500;
 }
 
 button:hover {
-    background-color: #39947f;
+    background-color: #532e6a;  /* even darker purple */
 }
 
 footer {
     text-align: center;
     margin-top: 30px;
+    color: #6b3d87;  /* dark purple */
 }
