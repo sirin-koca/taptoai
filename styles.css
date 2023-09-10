@@ -1,46 +1,52 @@
 /* Resetting some browser defaults */
-body, h1, h2, p, form {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;  
+    background-image: url('images\ai-human-dots.jpg') no-repeat;
+    background-repeat: no-repeat;
 }
 
 body {
     background-color: #ece9f1;  /* light purple */
     color: #333;
     line-height: 1.6;
-
 }
 
 header {
+    margin: 0 0 0 0;
+    padding: 20px 10px 10px 10px;
     background-color: #6b3d87;  /* dark purple */
     color: #fff;
     text-align: right;
-    padding: 30px 10px 0 0;
     background: linear-gradient(to bottom right, #55f, #00b894);
     color: white;
 }
 
 a {
     text-decoration: none;
+    color: #55f;
 }
 
 .info {
-    background: #dfe0df;  /* mint green */
     margin: 0 0 0 0;
-    padding: 50px 30px 10px 50px;
+    padding: 30px 30px 0 50px;
+    max-width: auto;
+    background: #dfe0df;  /* mint green */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center; /* or 'center' if you want the content to be vertically centered */
-    gap: 10px; /* provides a gap between the columns */
+    gap: 20px; /* provides a gap between the columns */
+    flex-wrap: wrap; /* Allow wrapping of items */
 }
 
 .column {
     margin: 0 0 0 0;
-    flex: 1; /* each column will take up equal width */
+    padding: 0 0 0 0;
+    flex: 1; /* Allow columns to take up equal space */
 }
 
 h2 {
@@ -55,10 +61,38 @@ p {
     font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    position: bottom;
+    opacity: 0.7;
+}
+
 footer {
-    text-align: center;
-    width: 100vw;
     margin: 0 0 0 0;
+    padding: 30px 10px 0px 10px;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
     color: #55f;
 }
+
+/* Default styles for desktop and larger screens */
+
+@media only screen and (max-width: 1024px) {
+    /* Styles for tablets */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Styles for smaller tablets and larger phones */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for smartphones */
+}
+@media only screen and (max-width: 768px) { /* Adjust this breakpoint as needed */
+    .column {
+        min-width: 100%; /* On smaller screens, columns take full width and stack */
+    }
+
 
