@@ -17,8 +17,8 @@ body {
 header {
     background-color: #6b3d87;  /* dark purple */
     color: #fff;
-    text-align: center;
-    padding: 50px 0;
+    text-align: right;
+    padding: 30px 10px 0 0;
     background: linear-gradient(to bottom right, #55f, #00b894);
     color: white;
 }
