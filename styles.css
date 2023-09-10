@@ -2,6 +2,7 @@
 body, h1, h2, p, form {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;  
 }
@@ -17,19 +18,29 @@ header {
     background-color: #6b3d87;  /* dark purple */
     color: #fff;
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     background: linear-gradient(to bottom right, #4b0082, #00b894);
     color: white;
 }
 
-a{
+a {
     text-decoration: none;
 }
-.info, .contact {
-    background: #b2f0ca;  /* mint green */
-    margin: 20px;
-    padding: 20px;
+
+.info {
+    background: #dfe0df;  /* mint green */
+    margin: 0 0 0 0;
+    padding: 50px 30px 20px 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* or 'center' if you want the content to be vertically centered */
+    gap: 10px; /* provides a gap between the columns */
+}
+
+.column {
+    margin: 0 0 0 0;
+    flex: 1; /* each column will take up equal width */
 }
 
 h2 {
@@ -44,32 +55,9 @@ p {
     font-weight: 300;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #a8a3b9;  /* grayish-purple */
-    border-radius: 4px;
-    font-weight: 300;
-}
-
-button {
-    display: inline-block;
-    background-color: #6b3d87;  /* dark purple */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-button:hover {
-    background-color: #532e6a;  /* even darker purple */
-}
-
 footer {
     text-align: center;
-    margin-top: 30px;
-    color: #6b3d87;  /* dark purple */
+    width: 100vw;
+    margin: 0 0 0 0;
 }
+
