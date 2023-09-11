@@ -8,14 +8,17 @@
 }
 
 body {
-    background-color: #55f;  /* light purple */
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: #55f;  /* light purple */    
+    background: linear-gradient(to right bottom, #55f, darksalmon);
     color: #333;
     line-height: 1.6;
 }
 
 header {
     margin: 0 0 0 0;
-    padding: 40px 10px 10px 10px;
+    padding: 50px 10px 0 0;
     color: #fff;
     text-align: right;
     background: linear-gradient(to right, #55f, darksalmon, #55f);
@@ -29,29 +32,38 @@ a {
 
 .info {
     margin: 0 0 0 0;
-    padding: 50px 30px 0 50px;
+    padding: 30px 0 0 50px;
     max-width: auto;
-    height: 100%;
     background: #dfe0df;  /* mint green */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center; /* or 'center' if you want the content to be vertically centered */
-    gap: 20px; /* provides a gap between the columns */
+    gap: 1px; /* provides a gap between the columns */
     flex-wrap: wrap; /* Allow wrapping of items */
+    background-image: url(images/dots.png);
+    background-size: 55%;
+    background-position-x: 170%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    border-bottom: #afaeae 5px solid;
 }
 
 .column {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    flex: 1; /* Allow columns to take up equal space */
+    flex: 1; /* Allow columns to take up equal space */    
+    margin-bottom: 0;
+}
+
+
+h1 {
+    font-weight: 400;
 }
 
 h2 {
-    border-bottom: 3px solid #6b3d87;  /* dark purple */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 p {
@@ -60,15 +72,16 @@ p {
 }
 
 img {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     max-width: 100%;
-    height: auto;
-    position: bottom;
-    opacity: 0.7;
+    opacity: 0.6;
+    transition: 1.5s;
 }
 
 footer {
-    margin: 30px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding: 50px 0 0 0;
     text-align: center;
     position: absolute;
     width: 100vw;
@@ -83,13 +96,22 @@ footer {
 
 @media only screen and (max-width: 768px) {
     /* Styles for smaller tablets and larger phones */
+    .info{        
+        background: #dfe0df;  /* mint green */
+        }
 }
 
 @media only screen and (max-width: 480px) {
     /* Styles for smartphones */
+    .info{        
+        background: #dfe0df;  /* mint green */
+        }
 }
 @media only screen and (max-width: 768px) { /* Adjust this breakpoint as needed */
     .column {
         min-width: 100%; /* On smaller screens, columns take full width and stack */
+    }
+    .info{        
+    background: #dfe0df;  /* mint green */
     }
 }
