@@ -3,8 +3,12 @@
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Montserrat', sans-serif; /* Google font */
+    font-family: 'Montserrat', 'Lato', sans-serif; /* Google font */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -22,12 +26,12 @@ a {
 
 main {
     margin: 0 0 0 0;
-    padding: 0 50px 0 500px;
-    max-width: auto;
+    padding: 0 200px 100px 500px;
     background: white;  
     display: flex;
     align-items: center;
     flex-wrap: wrap; /* Allow wrapping of items */
+    flex: 1; /* This will make the main content expand to fill the space */
     background-image: url(images/taptoai-bg-png-1.png);
     background-position-x: 0%;
     background-position-y: 35%;
@@ -53,13 +57,24 @@ p {
 ul{
     padding-left: 1em;
 }
+.container_footer {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative; 
+    bottom: 0;
+}
 
 footer {
     margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: #868484;
     text-align: center;
-    position: absolute;
-    width: 100vw;
     color: black;
+    margin-top: 0; /* Ensure no space is added above the footer */
+    padding-top: 0; /* Remove padding if any */
+    position: absolute; /* Change from 'bottom' which is not a valid value for position */
+    bottom: 0; /* If you want to stick the footer at the bottom */
+    width: 100%; /* It should span the full width of the page */
 }
 
 /* Default styles for desktop and larger screens */

@@ -3,32 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../scripts/var1.js"></script> 
-    <script src="../scripts/var2.js"></script>
-    <script src="../scripts/var3.js"></script>
-    <title>Test-side</title>
+    <title>Minimalist Website</title>
+    <style>
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #f0f0f0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .button {
+            background: #0057ff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: tomato;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .button {
+                padding: 8px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- var1.js 
-const tekst = `Mit navn er ${navn} og jeg er ${alder} år gammel`;
-alert(tekst); // Mit navn er Sirin og jeg er 25 år gammel
-document.write("Hello everyone! " + tekst); // Mit navn er Sirin og jeg er 25 år gammel
-console.log(tekst); // Mit navn er Sirin og jeg er 25 år gammel
-    -->
-    
-    <h1>Welcome</h1>
-    <div id="tekst">Nothing is happening here... </div>
-    <br>
-
-    <!-- var2.js-->
-    <label for="inn">Navn</label>
-    <!-- en input-box trenger en label ellers feilmelding i IntelliJ-->
-    <input type="text" onchange="visNavn()" id="inn"/>
-    <button onclick="visMelding()">Vis melding</button>
-    <div id="navn">ut</div>
-    <div id="melding">ut</div>
-
-
+    <div class="container">
+        <h1>Welcome to Our Minimalist Website</h1>
+        <p>Focus on what's important and remove everything else.</p>
+        <a href="#" class="button">Learn More</a>
+    </div>
 </body>
 </html>
