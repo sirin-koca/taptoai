@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/var1.js"></script> 
+    <script src="../scripts/var2.js"></script>
+    <script src="../scripts/var3.js"></script>
+    <title>Test-side</title>
+</head>
+<body>
+
+    <!-- var1.js 
+const tekst = `Mit navn er ${navn} og jeg er ${alder} år gammel`;
+alert(tekst); // Mit navn er Sirin og jeg er 25 år gammel
+document.write("Hello everyone! " + tekst); // Mit navn er Sirin og jeg er 25 år gammel
+console.log(tekst); // Mit navn er Sirin og jeg er 25 år gammel
+    -->
+    
+    <h1>Welcome</h1>
+    <div id="tekst">Nothing is happening here... </div>
+    <br>
+
+    <!-- var2.js-->
+    <label for="inn">Navn</label>
+    <!-- en input-box trenger en label ellers feilmelding i IntelliJ-->
+    <input type="text" onchange="visNavn()" id="inn"/>
+    <button onclick="visMelding()">Vis melding</button>
+    <div id="navn">ut</div>
+    <div id="melding">ut</div>
+
+
+</body>
+</html>
