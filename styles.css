@@ -1,75 +1,60 @@
 /* Resetting browser defaults */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     box-sizing: border-box;
     font-family: 'Montserrat', 'Lato', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    min-height: 100%;
+body, html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     background-color: white;
     color: #333;
     line-height: 1.6;
-    font-size: 16px; /* Base font size */
 }
 
-a {
-    text-decoration: none;
-    color: #55f;
-}
-
-main {
-    padding: 20px; /* Adjust padding for smaller screens */
-    background: white url(images/taptoai-bg-png-1.png) 0 100% no-repeat;
+.container {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    padding:0 0 0 0;
 }
 
-h1, h2, p, ul {
-    margin-bottom: 20px;
+.image-container {
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1; /* Adjust as needed */
+    padding: 10px;
 }
 
 h1 {
-    font-weight: 800;
-    font-size: 2.5rem; /* Responsive font size */
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
-h2 {
-    font-weight: 300;
-    font-size: 2rem; /* Responsive font size */
+p {
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
-p, ul {
-    font-weight: 300;
-    font-size: 1rem; /* Responsive font size */
-}
-
-ul {
-    padding-left: 1em;
-}
-
-/* Media Queries */
 @media only screen and (max-width: 768px) {
-    main {
-        padding: 10px;
+    .container {
+        flex-direction: column;
     }
 
-    h1 {
-        font-size: 2rem; /* Smaller font size for smaller screens */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    main {
-        padding: 5px;
-    }
-
-    h1 {
-        font-size: 1.5rem; /* Even smaller font size for smaller screens */
+    .image-container, .text-container {
+        max-width: 100%;
     }
 }
-
-/* Add more media queries as needed */
