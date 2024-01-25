@@ -46,8 +46,8 @@ h1 {
     margin-bottom: 20px;
 }
 
-p {
-    margin-bottom: 20px;
+p, ul {
+    margin: 20px 30px 20px 20px;
     font-weight: 400;
 }
 
